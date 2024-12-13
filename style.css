@@ -5,7 +5,6 @@
     padding: 0;
 }
 body{
-    background-color: antiquewhite;
     font-family: "Poppins", serif;
 }
 header{
@@ -41,8 +40,11 @@ header> p{
     padding: 5px;
 }
 nav{
-   background-image: linear-gradient(to right, #744909a9, #775208dc);
-   padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, #744909a9, #775208dc);
+    padding: 0.5rem;
    
 }
 nav>a{
@@ -51,9 +53,51 @@ nav>a{
     padding: 10px;
     font-weight: bold;
     border-radius: 5px;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
 }
 nav a:hover{
     background-color: #704108;
     color: white;
+}
+main{
+    padding: 1rem;
+}
+main>section{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+}
+.imagem-cardapio{
+    width: 150px;
+    height: auto;
+    margin-right: 1rem;
+    border-radius: 5px;
+}
+article > h2{
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+    color: #333;
+
+}
+article>p{
+    margin: 0;
+    color: #666;
+}
+button{
+    
+    bottom: 0;
+    right: 0;
+    padding: 0.2rem 1rem;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0 0.2);
+
+}
+button:hover{
+    background-color: #218838;
 }
