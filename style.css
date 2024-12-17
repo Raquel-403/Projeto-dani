@@ -89,6 +89,13 @@ main>section{
     margin-right: 1rem;
     border-radius: 5px;
 }
+.titulos{
+    font-family: var(--font-conteudo);
+    padding: 5px;
+    margin-bottom: 5px;
+    color: #1c1b1b;
+    background-image: linear-gradient(to right, #744909a9, #775208dc);
+}
 article > h2{
     font-family: var(--font-conteudo);
     margin: 0 0 0.5rem;
@@ -117,3 +124,10 @@ button{
 button:hover{
     background-color: #218838;
 }
+footer{
+    background-color: #218838;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
