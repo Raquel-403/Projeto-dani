@@ -77,12 +77,12 @@ header> p{
 
 /* inicio munu navegação */
 #Menu{
-    display: flex;
-    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
     background-image: linear-gradient(to right, #744909a9, #775208dc);
-    padding-top: 5px; 
-    
-   
+    padding-top: 10px; 
+    text-align: center;
+    transition: all 0.3s ease-in-out;
     
 } 
 ul{
@@ -105,7 +105,7 @@ ul{
     border-radius: 3px;
     transition-duration: 0.3s;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.76);
-    cursor: pointer;
+   
     
    
 
@@ -120,18 +120,13 @@ nav a:hover{
     background-color: #704108;
     color: white;
 }
-@media (max-width:740px){
-    #menu-hamburguer{
-        display: block;
-        margin: 1px;
-    }
-    .itens-menu{
-        display: none;
-    }
 
-}
+
 main{
-    padding: 1rem;
+   margin-top: 5px;
+    padding: 2px;
+   
+   
 }
 main>section{
     display: flex;
@@ -139,6 +134,7 @@ main>section{
     margin-bottom: 1.5rem;
     border-bottom: 1px solid #ccc;
     padding-bottom: 1rem;
+   
 }
 .imagem-cardapio{
     width: 150px;
@@ -180,19 +176,28 @@ article>p{
 
 }
 .valor{
-    margin-right: 90px ;
-   padding: 0 2rem;
+    
+    font-family: var(--font-destaque);
+    font-size: bold;
+    padding: 15px;
+    margin: auto;
+  
    
 }
-.cart-icon {
-    transition: transform 0.2s ;
+#cart-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
     cursor: pointer;
 }
-.cart-icon :hover{
-    transform: scale(1.1);
-}
+
 button :hover{
     background-color: #218838;
+}
+.desc-acompanhamento{
+    font-family: var(--font-destaque);
+    text-align: center;
+    margin: 2px;
 }
 footer{
     background-color: #218838;
