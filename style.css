@@ -13,15 +13,31 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    
+}
+html, body{
+    width: 100%;
+    height: 100vh;
+    /* width: 100vw; */
+   
 }
 body{
     font-family: var(--font-padrao);
     background-color: #f3eeeea3;
+    /* width:100vh; */
     
    
 }
 /* inicio banner */
 
+header{
+    align-items: center; 
+    width: 100%;
+    height: auto;
+    
+    
+}
 #banner{
 
     background-image: url(img/fundo.webp);
@@ -33,6 +49,7 @@ body{
     min-height: 100px;
     text-align: center;
     padding-top: 20px; 
+    
    
     
 }
@@ -41,6 +58,7 @@ body{
     width: 200px;
     border-radius: 50%;
 }
+
 h1{
     font-family: var(--font-destaque);
     color: white;
@@ -65,33 +83,25 @@ header> p{
     font-family: var(--font-conteudo);
     margin: auto;
 }
-@media(max-width:950px){
-    #baner{
-        flex-direction: column-reverse;
-        align-items: center;
-        gap: 2rem;
-    }
 
-}
 /* final banner */
 
 /* inicio munu navegação */
 #Menu{
-    position: relative;
+    display: flex;
+    /* align-items: center; */
     width: 100%;
     background-image: linear-gradient(to right, #744909a9, #775208dc);
     padding-top: 10px; 
-    text-align: center;
-    transition: all 0.3s ease-in-out;
+    
+    
     
 } 
 ul{
-    display: flex;
+   display: flex;
     padding: 10px;
     margin: auto;
-    list-style: none;
-    
-    
+    list-style: none;    
 }
 .itens-menu{
     font-family: var(--font-conteudo);
@@ -129,7 +139,7 @@ main{
    
 }
 main>section{
-    display: flex;
+    display: flex; 
     align-items: center;
     margin-bottom: 1.5rem;
     border-bottom: 1px solid #ccc;
@@ -162,7 +172,7 @@ article>p{
     margin: 0;
     color: #666;
 }
-.carrinho{
+/* .carrinho{
     
     bottom: 0;
     right: 0;
@@ -174,11 +184,11 @@ article>p{
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0,0,0 0.2);
 
-}
+} */
 .valor{
     
     font-family: var(--font-destaque);
-    font-size: bold;
+     font-size: bold;
     padding: 15px;
     margin: auto;
   
@@ -191,18 +201,30 @@ article>p{
     cursor: pointer;
 }
 
-button :hover{
+/* button :hover{
     background-color: #218838;
-}
+} */
 .desc-acompanhamento{
     font-family: var(--font-destaque);
     text-align: center;
     margin: 2px;
 }
-footer{
+/* footer{
     background-color: #218838;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
+/* @media screen and (max-width:800px){
+    body{
+        font-size: 16px;
+        padding: 10px;
+    }
+    header{
+        width: 100%;
+        flex-direction: column;
+
+    }
+
+} */
 
