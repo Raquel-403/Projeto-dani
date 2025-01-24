@@ -105,6 +105,7 @@ ul{
     border-radius: 3px;
     transition-duration: 0.3s;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.76);
+    cursor: pointer;
     
    
 
@@ -120,10 +121,11 @@ nav a:hover{
     color: white;
 }
 @media (max-width:740px){
-    .menu-hamburguer{
-        display:block;
+    #menu-hamburguer{
+        display: block;
+        margin: 1px;
     }
-    li{
+    .itens-menu{
         display: none;
     }
 
@@ -176,6 +178,18 @@ article>p{
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0,0,0 0.2);
 
+}
+.valor{
+    margin-right: 90px ;
+   padding: 0 2rem;
+   
+}
+.cart-icon {
+    transition: transform 0.2s ;
+    cursor: pointer;
+}
+.cart-icon :hover{
+    transform: scale(1.1);
 }
 button :hover{
     background-color: #218838;
