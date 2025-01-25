@@ -22,3 +22,22 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    // Seleciona todos os links do menu
+    let menuLinks = document.querySelectorAll(".itens-menu");
+
+    menuLinks.forEach(link => {
+        link.addEventListener("click", function (event) {
+            event.preventDefault(); // Evita o comportamento padrão do link
+
+            let sectionId = this.getAttribute("href").substring(1); // Obtém o ID da seção
+            let section = document.getElementById(sectionId); // Seleciona a seção correspondente
+
+            if (section) {
+                section.scrollIntoView({ behavior: "smooth" }); // Rola suavemente para a seção
+            }
+        });
+    });
+});
+
+
