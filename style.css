@@ -26,6 +26,7 @@ body{
     font-family: var(--font-padrao);
     background-color: #f3eeeea3;
     /* width:100vh; */
+   
     
    
 }
@@ -88,47 +89,62 @@ header> p{
 
 /* inicio munu navegação */
 #Menu{
-    display: flex;
-    /* align-items: center; */
+    /* position: sticky;
+    top: 0;
+    z-index: 1000; */
+   display: flex; 
+    justify-content: center;
+    align-items: center;
     width: 100%;
     background-image: linear-gradient(to right, #744909a9, #775208dc);
     padding-top: 10px; 
-    
-    
+    flex-wrap: wrap;
+    overflow: hidden;
     
 } 
 ul{
-  
-    padding: 10px;
-    margin: auto;
-    list-style: none;    
+    display: flex;
+    flex-wrap:  wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none; 
+    width: 100%;        
 }
-.itens-menu{
+li{
+    margin-right: 5px;   
+}
+ nav a{
     font-family: var(--font-conteudo);
     text-decoration: none;
     color: white;
-    padding: 0 2rem;
-    width: 200px;
-    height: auto;
-    margin: 5px;
+    padding: 10px 20px;    
     font-weight: bold;
     border-radius: 3px;
     transition-duration: 0.3s;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.76);
-   
-    
-   
-
-}
-body > nav> a{
-    position: sticky;
-    top: 0px;
-    
-
 }
 nav a:hover{
     background-color: #704108;
     color: white;
+}
+@media(max-width:500px){
+    menu{
+      flex-direction: column;  
+    }
+    ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    li{
+        width: 100%;
+        text-align: center;
+    }
+    nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 
@@ -146,6 +162,17 @@ main>section{
     padding-bottom: 1rem;
    
 }
+/* .cardapio-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+@media (min-width){
+    .cardapio-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+} */
 .imagem-cardapio{
     width: 150px;
     height: auto;
@@ -156,7 +183,6 @@ main>section{
     font-family: var(--font-conteudo);
     padding: 5px;
     margin-bottom: 5px;
-    color: #1c1b1b;
     background-image: linear-gradient(to right, #744909a9, #775208dc);
     color: white;
 }
@@ -188,7 +214,7 @@ article>p{
 .valor{
     
     font-family: var(--font-destaque);
-     font-size: bold;
+    font-size: bold;
     padding: 15px;
     margin: auto;
   
@@ -215,7 +241,7 @@ article>p{
     align-items: center;
     justify-content: center;
 } */
-/* @media screen and (max-width:800px){
+ @media screen and (max-width:800px){
     body{
         font-size: 16px;
         padding: 10px;
@@ -226,5 +252,5 @@ article>p{
 
     }
 
-} */
+}
 
