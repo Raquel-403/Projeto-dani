@@ -220,12 +220,12 @@ article>p{
   
    
 }
-#cart-icon {
+/* #cart-icon {
     position: fixed;
     bottom: 20px;
     right: 20px;
     cursor: pointer;
-}
+} */
 
 /* button :hover{
     background-color: #218838;
@@ -253,4 +253,88 @@ article>p{
     }
 
 }
+/* #cardapio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.itens-carrinho {
+    width: 150px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+/* Estiliza a janela flutuante */
+/*.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 2px solid #f39c12;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    text-align: center;
+}
+.popup button {
+    margin: 5px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn-pequena { background: #ffcc00; }
+.btn-media { background: #ff6600; }
+
+/* Ícone do carrinho */
+#cart-icon {
+    /* position: fixed; 
+    top: 20px;
+    right: 20px; */
+    background: #ff6600;
+    width: 200px;
+    height: 50px;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;*/
+    font-weight: bold; 
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+#cart-count {
+    background: #d31a1a;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 14px;
+}
+/* Modal do carrinho */
+#cart-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#cart-items {
+    list-style: none;
+    padding: 0;
+} 
+ 
 

@@ -28,11 +28,11 @@
           
     </nav>
     
-    <main>
+    <main id="cardapio">
         <h2 id="marmitex" class="titulos">Marmitex</h1>
         
             
-        <section >
+        <section class="itens-carrinho" >
             <img src="img/almondegas.avif" alt="almondegas" class="imagem-cardapio">
             <article  >
                 <h2>Almondegas </h2>
@@ -42,7 +42,7 @@
                 
             </article>
         </section>
-        <section>
+        <section class="itens-carrinho" >
             <img src="img/omelete.jpg" alt="omelete" class="imagem-cardapio">
             <article >
                 <h2>Omelete</h2>
@@ -52,8 +52,8 @@
                 
                 
              </article>
-        </section>
-        <section>
+        </section  >
+        <section class="itens-carrinho" >
             <img src="img/linguiça.jpg" alt="linguiça" class="imagem-cardapio">
             <article >
                 <h2>Linguiça toscana</h2>
@@ -63,8 +63,8 @@
                 
                 
             </article>
-        </section>
-        <section>
+        </section >
+        <section class="itens-carrinho" >
             <img src="img/frango.jpg" alt="frango" class="imagem-cardapio">
             <article>
                 <h2>Frango cozido</h2>
@@ -74,7 +74,7 @@
                 </span>
             </article>
         </section>
-        <section>
+        <section class="itens-carrinho" >
             <img src="img/calabresa.jpg" alt="calabresa" class="imagem-cardapio">
             <article>
                 <h2>Liguiça Calabresa</h2>
@@ -84,7 +84,7 @@
                 
             </article>
         </section>
-        <section>
+        <section class="itens-carrinho" >
             <img src="img/carne-moida.jpg" alt="carne" class="imagem-cardapio">
             <article>
                 <h2>Carne Moida com batata</h2>
@@ -93,9 +93,9 @@
                 </span>
                 
             </article>
-        </section>
+        </section class="itens-carrinho" >
                 
-        <section>
+        <section class="itens-carrinho" >
             <img src="img/hamburguer2.jpg" alt="hamburguer" class="imagem-cardapio">
             <article>
                 <h2>Hamburguer</h2>
@@ -117,7 +117,7 @@
             </article>
         </section>
                 
-        <section>
+        <section class="itens-carrinho" >
             <img src="img/panqueca.jpg" alt="panqueca" class="imagem-cardapio">
             <article>
                 <h2>Panqueca de carne</h2>
@@ -128,7 +128,7 @@
             </article>
         </section>
                 
-        <section>
+        <section class="itens-carrinho" >
             <img src="img/salcicha.jpg" alt="salsicha" class="imagem-cardapio">
             <article>
                 <h2>Salsicha ao molho</h2>
@@ -141,21 +141,21 @@
         </section>
         <h2 id="acompanhamentos" class="titulos">Acompanhamentos</h2>
         <p class="desc-acompanhamento">Escolha até 2 acompanhamentos</p>
-        <section>
+        <section class="itens-acompanhamentos">
             <img src="img/chips.jpg" alt="batata-chips" class="imagem-cardapio">
             <article>
                 <h2>batata chips</h2>
             </article>
         </section>
                 
-        <section>
+        <section class="itens-acompanhamentos">
          <img src="img/macarrao.jpg" alt="macarrao" class="imagem-cardapio">
             <article>
                 <h2>Macarrão</h2>
             </article>
         </section>
                 
-        <section>
+        <section class="itens-acompanhamentos">
             <img src="img/abobrinha.jpg" alt="abobrinha-refogada" class="imagem-cardapio">
             <article>
                 <h2>Abobrinha Refogada</h2>
@@ -176,14 +176,14 @@
             </article>
         </section>
                 
-        <section>
+        <section class="itens-acomapnhamentos">
             <img src="img/pure.jpg" alt="pure-batata" class="imagem-cardapio">
             <article>
                 <h2>Pure de batata</h2>
             </article>
         </section>
                 
-        <section>
+        <section class="itens-acompahamentos">
             <img src="img/xuxu2.jpg" alt="Xuxu" class="imagem-cardapio">
             <article>
                 <h2>Xuxu refogado</h2>
@@ -214,15 +214,37 @@
             </article>
                 
         </section>
-            
-            
-        <svg id="cart-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> 
-        <circle cx="9" cy="21" r="1"></circle>
-        <circle cx="20" cy="21" r="1"></circle>
-        <path d="M1 1h4l2 12h13l3-7H6"></path>
-        </svg>
+
+        <div id="cart-icon">
+            🛒 Carrinho <span id="cart-count">0</span>
+        </div>
+        <div id="cart-modal">
+            <h3>🛒 Seu Carrinho</h3>
+            <ul id="cart-items"></ul>
+            <p id="cart-total">Total: R$ 0,00</p>
+            <button onclick="fecharCarrinho()">Fechar</button>
+        </div>
         
-    </main>
-    <script src="index.js"></script>  
+            
+        
+    </main>  
+    <!-- <footer>
+        <footer>
+            <div id="cart-icon">
+                🛒 Carrinho <span id="cart-count">0</span>
+            </div>
+        </footer>
+    
+    </footer>
+
+    <div id="cart-modal">
+        <h3>🛒 Seu Carrinho</h3>
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Total: R$ 0,00</p>
+        <button onclick="fecharCarrinho()">Fechar</button>
+    </div> -->
+      
+    
+  
 </body>
 </html>
