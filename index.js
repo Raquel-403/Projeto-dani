@@ -1,43 +1,52 @@
-
-document.addEventListener("DOMContentLoaded", function () {
-    let horarioFuncionamento = document.getElementById("p2");
-
-    // Obtém a hora atual do usuário
+function verificarHorario(){
     let agora = new Date();
-    let horaAtual = agora.getHours();
+    let diaSemana = agora.getDay();
+    let horas = agora.getHours();
 
-    // Definição do horário de funcionamento
-    let horaAbertura = 11;
-    let horaFechamento = 15;
+    let dentroDoHorario = (diaSemana >= 1 && diaSemana <= 6) && (horas >= 11 && horas <= 15);
 
-    // Verifica se está dentro do horário de funcionamento
-    if (horaAtual >= horaAbertura && horaAtual < horaFechamento) {
-        horarioFuncionamento.style.backgroundColor = "green"; // Verde quando aberto
-        horarioFuncionamento.style.color = "white"; // Texto branco
-        horarioFuncionamento.textContent = "Estamos abertos! Atendimento das 11h às 15h.";
-    } else {
-        horarioFuncionamento.style.backgroundColor = "red"; // Vermelho quando fechado
-        horarioFuncionamento.style.color = "white"; // Texto branco
-        horarioFuncionamento.textContent = "Estamos fechados! Atendimento das 11h às 15h.";
+    let p2= document.getElementById("p2");
+    if (dentroDoHorario){
+
+        p2.style.backgroundColor="green";
+    } else{
+        p2.style.backgroundColor="red"
     }
-});
+}
+verificarHorario();
+setInterval(verificarHorario,60000);
 
-document.addEventListener("DOMContentLoaded", function () {
-    // Seleciona todos os links do menu
-    let menuLinks = document.querySelectorAll(".itens-menu");
 
-    menuLinks.forEach(link => {
-        link.addEventListener("click", function (event) {
-            event.preventDefault(); // Evita o comportamento padrão do link
+let carrinho=[];
+let total = [];
 
-            let sectionId = this.getAttribute("href").substring(1); // Obtém o ID da seção
-            let section = document.getElementById(sectionId); // Seleciona a seção correspondente
+function adicionarAoCarrinho(nome, preco){
+    carrinho.push({nome,preco});
+    total+= preco;
+    atualizarCarrinho();
+}
+function atualizarCarrinho(){
+    let lista= document.getElementById("cart-items");
+    let totalSpan= document.getElementById("cart-tota");
 
-            if (section) {
-                section.scrollIntoView({ behavior: "smooth" }); // Rola suavemente para a seção
-            }
-        });
+    lista.innerHTML=""; //limpa a lista antes de atualizar
+
+    carrinho.forEach((item, index)=>{
+        let li = document.createElement("li");
+        li.textContent=${item.nome}-R$ ${item.preco.toFixed(2)};
+
+        // Botao remover itens 
+
+        let bntRemover= document.createElement("button");
+        bntRemover.textContent="Remover";
+        bntRemover.onclick=()=> removerItem(index);
+        li.appendChild(bntRemover);
+
+        lista.appendChild(li);
+
+       
     });
-});
 
+    totalSpan.textContent=total.toFixed(2);
 
+}

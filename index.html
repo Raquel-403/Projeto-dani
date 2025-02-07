@@ -198,6 +198,7 @@
                 <p>Feijoda gorda com pernil suino e linguiça calabresa, simples e saborosa, acompanha arroz branco, farofa, couve refogada e vinagrete</p>
 
                 <span class="valor">R$:18,00</span>
+                <button onclick="adicionarAoCarrinho ('feijoada 18.00')">adicionar</button>
                 
             </article>
                            
@@ -215,36 +216,29 @@
                 
         </section>
 
-        <div id="cart-icon">
-            🛒 Carrinho <span id="cart-count">0</span>
+     
+        <div id="cart-icon" onclick="mostrarCarrinho()">
+            <h2>Seu Carrinho</h2>
         </div>
+
         <div id="cart-modal">
-            <h3>🛒 Seu Carrinho</h3>
+            <h2>🛒 Seu Carrinho</h2>
+
+            
             <ul id="cart-items"></ul>
-            <p id="cart-total">Total: R$ 0,00</p>
-            <button onclick="fecharCarrinho()">Fechar</button>
+            <p>Total: R$: <span cart-total>0.00</span></p>
+            <button id="finalizar" onclick="finalizarPedido()">Finalizar Pedido</button>
+            <button onclick="fecharCarinho()">Fechar</button>
+            
+            
         </div>
         
             
         
     </main>  
-    <!-- <footer>
-        <footer>
-            <div id="cart-icon">
-                🛒 Carrinho <span id="cart-count">0</span>
-            </div>
-        </footer>
     
-    </footer>
-
-    <div id="cart-modal">
-        <h3>🛒 Seu Carrinho</h3>
-        <ul id="cart-items"></ul>
-        <p id="cart-total">Total: R$ 0,00</p>
-        <button onclick="fecharCarrinho()">Fechar</button>
-    </div> -->
-      
     
+   <script src="index.js"></script> 
   
 </body>
 </html>
