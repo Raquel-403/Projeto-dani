@@ -221,14 +221,32 @@ article>p{
     display: block;
     margin-top: 10px;
  }
+ .add-itens{
+    position: sticky;
+    margin: 10px;
+    border: none;
+    cursor:pointer;
+    font-family: var(--font-padrao);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgba(69, 65, 65, 0.085);
+    background-color: #8c55129a;
+    color: white;
+   
+ }
+ .add-itens:hover{
+   background-color: #c9c2c2; 
+   color: black;
+   transform: scale(1.05s);
+ }
+
 
 /* Ícone do carrinho */
 #cart-icon {
-    
-   background-color: #218838;
-    width: 200px;
+   
+    width: 100px;
     height: 50px;
-    color: white;
     padding: 10px 15px;
     border-radius: 50%;
     cursor: pointer;
