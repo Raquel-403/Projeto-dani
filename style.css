@@ -100,7 +100,9 @@ header> p{
     transition: all 0.3s ease-in-out;
    
     
-} 
+}
+
+
 ul{
     display: flex;
     justify-content: center;
