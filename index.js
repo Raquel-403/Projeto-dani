@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (titulo) titulo.style.backgroundColor = "red"; // Muda o fundo para vermelho
             if (botaoIndisponivel) {
                 botaoIndisponivel.style.display = "block";  
-                botaoIndisponivel.innerText = "Este item indisponivel. Feijoda apenas às Quartas e sábados";
+                botaoIndisponivel.innerText = "Item indisponivel. Feijoda apenas às Quartas e sábados";
             }
         }
     }
