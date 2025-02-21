@@ -89,7 +89,7 @@ header> p{
 /* final banner */
 
 /* inicio munu navegação */
-#Menu{
+.Menu{
     position: relative; 
     z-index: 1000;
     box-shadow: 0 4px 6px rgba(0, 0, 0 0.1);
@@ -124,6 +124,8 @@ li{
     font-weight: bold;
     transition: color 0.3s ease;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.76);
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
 }
 nav a:hover{
     background-color: #704108;
@@ -223,18 +225,21 @@ article>p{
     display: block;
     margin-top: 10px;
  }
- .add-itens{
+.add-itens{
     position: sticky;
     margin: 10px;
     border: none;
     cursor:pointer;
     font-family: var(--font-padrao);
     border-radius: 5px;
-    padding: 5px;
-    font-size: 14px;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
     box-shadow: 0 4px 6px rgba(69, 65, 65, 0.085);
-    background-color: #8c55129a;
+    background-color: #8f500394;
     color: white;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
    
  }
  .add-itens:hover{

@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (titulo) titulo.style.backgroundColor = "red"; // Muda o fundo para vermelho
             if (botaoIndisponivel) {
                 botaoIndisponivel.style.display = "block";  
-                botaoIndisponivel.innerText = "Item indisponivel. Feijoda apenas às Quartas e sábados";
+                botaoIndisponivel.innerText = "Poxaaa😥 Hoje não servimos Feijoada, este item está disponível as quartas e sábados  ";
             }
         }
     }
@@ -54,5 +54,8 @@ document.addEventListener("DOMContentLoaded", function () {
     verificarDisponibilidade();
     setInterval(verificarDisponibilidade, 60000);
 });
+
+
+
 
 

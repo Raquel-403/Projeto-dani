@@ -16,18 +16,18 @@
     </header>
    
    
-    
-    <nav id="Menu">
+    <div class="Menu">
+        <nav id="Menu-container">
         
-        <ul>
-            <li><a class="itens-menu" href="#marmitex">Marmitex</a></li>
-            <li><a class="itens-menu" href="#acompanhamentos">Acompanhamentos</a></li>
-            <li><a class="itens-menu" href="#feijoada">Feijoada</a></li>
-            <li><a  class="itens-menu"href="#sucos">Sucos</a></li>
+                <ul>
+                <li><a class="itens-menu" href="#marmitex">Marmitex</a></li>
+                <li><a class="itens-menu" href="#acompanhamentos">Acompanhamentos</a></li>
+                <li><a class="itens-menu" href="#feijoada">Feijoada</a></li>
+                <li><a  class="itens-menu"href="#sucos">Sucos</a></li>
         </ul>
           
-    </nav>
-    
+        </nav>
+    </div>
     <main id="cardapio">
         <h2 id="marmitex" class="titulos">Marmitex</h1>
         
@@ -40,7 +40,7 @@
                 <span class="valor">R$: 15,00
                 </span>
 
-                <button onclick="adicionarAoCarrinho ('Almondegas 15.00')" class="add-itens">adicionar</button>
+                <button  class="add-itens" data-nome="Almondegas" data-preco="15.00">Adicionar</button>
                 
             </article>
         </section>
@@ -51,7 +51,7 @@
                 <p> Acompanha arroz branco soltinho, um delicioso feijao com caldo e dois acompanhamentos da sua escolha.</p>
                 <span class="valor">R$: 15,00
                 </span>
-                <button onclick="adicionarAoCarrinho ('Omelete 15.00')" class="add-itens">adicionar</button>
+                <button class="add-itens" data-nome="Omelete" data-preco="15.00">Adicionar</button>
                 
              </article>
         </section  >
@@ -62,7 +62,7 @@
                 <p> Acompanha arroz branco soltinho, um delicioso feijao com caldo e dois acompanhamentos da sua escolha.</p>
                 <span class="valor">R$: 15,00
                 </span>
-                <button onclick="adicionarAoCarrinho ('Linguiça toscana 15.00')" class="add-itens">adicionar</button>
+                <button  class="add-itens" data-nome="Linguiça Toscana" data-preco="15.00">Adicionar</button>
                 
             </article>
         </section >
@@ -74,7 +74,7 @@
                 
                 <span class="valor">R$: 15,00
                 </span>
-                <button onclick="adicionarAoCarrinho ('Frango cozido 15.00')" class="add-itens">adicionar</button>
+                <button class="add-itens" data-nome="Frango cozido" data-preco="15.00">Adicionar</button>
 
             </article>
         </section>
@@ -86,7 +86,7 @@
                 <span class="valor">R$: 15,00
                 </span>
 
-                <button onclick="adicionarAoCarrinho ('Lnguiça toscana 15.00')" class="add-itens">adicionar</button>
+                <button  class="add-itens" data-nome="Linguiça Calabreça" data-preco="15.00">Adicionar</button>
                 
             </article>
         </section>
@@ -98,7 +98,7 @@
                 <span class="valor">R$: 15,00
                 </span>
 
-                <button onclick="adicionarAoCarrinho ('Carne Moida 15.00')" class="add-itens">adicionar</button>
+                <button class="add-itens" data-nome="Carne moida com batata" data-preco="15.00">Adicionar</button>
                 
             </article>
         </section class="itens-carrinho" >
@@ -111,7 +111,7 @@
                 <span class="valor">R$: 15,00
                 </span>
 
-                <button onclick="adicionarAoCarrinho (' Hanburguer 15.00')" class="add-itens">adicionar</button>
+                <button  class="add-itens" data-nome="Hamburguer" data-preco="15.00">Adicionar</button>
 
                 
             </article>
@@ -125,7 +125,7 @@
                 <span class="valor">R$: 15,00
                 </span>
 
-                <button onclick="adicionarAoCarrinho (' Frango cozido 15.00')" class="add-itens">adicionar</button>
+                <button  class="add-itens" data-nome="Stake de frango" data-preco="15.00">Adicionar</button>
 
                 
             </article>
@@ -139,7 +139,7 @@
                 <span class="valor">R$:15,00
                 </span>
 
-                <button onclick="adicionarAoCarrinho ('Panqueca de carne 15.00')" class="add-itens">adicionar</button>
+                <button  class="add-itens" data-nome="Panqueca de carne" data-preco="15.00">Adicionar</button>
 
                 
             </article>
@@ -153,7 +153,7 @@
                 
                 <span class="valor">R$: 15,00
                 </span>
-                <button onclick="adicionarAoCarrinho (' salsicha ao molho 15.00')" class="add-itens">adicionar</button>
+                <button class="add-itens" data-nome="Salcicha ao molho" data-preco="15.00">Adicionar</button>
                 
 
             </article>
@@ -165,7 +165,7 @@
             <article>
                 <h2>batata chips</h2>
             </article>
-            <button onclick="adicionarAoCarrinho (' batata chips 00.00')" class="add-itens">adicionar</button>
+            <button onclick="adicionarAoCarrinho (' batata chips 00.00')" class="add-itens">Adicionar</button>
         </section>
        
 
@@ -175,7 +175,7 @@
             <article>
                 <h2>Macarrão</h2>
             </article>
-            <button onclick="adicionarAoCarrinho (' Macarrão 00.00')" class="add-itens">adicionar</button>
+            <button onclick="adicionarAoCarrinho (' Macarrão 00.00')" class="add-itens">Adicionar</button>
         </section>
                 
         <section class="itens-acompanhamentos">
@@ -184,7 +184,7 @@
                 <h2>Abobrinha Refogada</h2>
                 </article>
 
-                <button onclick="adicionarAoCarrinho (' Abobrinha refogada 00.00')" class="add-itens">adicionar</button>
+                <button  class="add-itens"  class="add-itens acompanhamento" data-nome="Abobrinha Refogada" data-preco="0.00">Adicionar</button>
         </section>
                 
         <section>
@@ -193,7 +193,7 @@
                 <h2>Ovo Frito</h2>
             </article>
 
-            <button onclick="adicionarAoCarrinho (' Ovo Frito 00.00')" class="add-itens">adicionar</button>
+            <button  class="add-itens acompanhamento" data-nome="Ovo frito" data-preco="0.00" class="add-itens">Adicionar</button>
         </section>
                 
         <section>
@@ -202,7 +202,7 @@
                 <h2>Salada do Dia</h2>
             </article>
 
-            <button onclick="adicionarAoCarrinho (' Salada do dia 00.00')" class="add-itens">adicionar</button>
+            <button  class="add-itens acompanhamento" data-nome="Salada do dia" data-preco="0.00" class="add-itens">Adicionar</button>
         </section>
                 
         <section class="itens-acomapnhamentos">
@@ -211,7 +211,7 @@
                 <h2>Pure de batata</h2>
             </article>
 
-            <button onclick="adicionarAoCarrinho (' Pure de batata 00.00')" class="add-itens">adicionar</button>
+            <button  class="add-itens acompanhamento" data-nome="Pure de batata" data-preco="0.00" class="add-itens">Adicionar</button>
         </section>
                 
         <section class="itens-acompahamentos">
@@ -219,7 +219,7 @@
             <article>
                 <h2>Xuxu refogado</h2>
             </article>
-            <button onclick="adicionarAoCarrinho (' Xuxu refolgado 00.00')" class="add-itens">adicionar</button>
+            <button  class="add-itens acompanhamento" data-nome="Xuxu refogado" data-preco="0.00" class="add-itens">Adicionar</button>
         </section>
                 
         <h2 id="feijoda" class="titulos">Feijoada</h2>
@@ -230,7 +230,7 @@
                 <p>Feijoda gorda com pernil suino e linguiça calabresa, simples e saborosa, acompanha arroz branco, farofa, couve refogada e vinagrete</p>
 
                 <span class="valor">R$:18,00</span>
-                <button onclick="adicionarAoCarrinho ('feijoada 18.00')" class="add-itens" id="indisponivel">adicionar</button>
+                <button data-nome="Feijoada" data-preco="18.00" class="add-itens" id="indisponivel">Adicionar</button>
                 
             </article>
                            
@@ -246,7 +246,7 @@
 
             </article>
 
-            <button onclick="adicionarAoCarrinho (' Suco 04.00')" class="add-itens">adicionar</button>
+            <button data-nome="Suco" data-preco="15.00"class="add-itens">Adicionar</button>
                 
         </section>
 
