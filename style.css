@@ -152,13 +152,13 @@ nav a:hover{
 }
 
 
-main{
+.cardapio{
    margin-top: 5px;
     padding: 2px;
    
    
 }
-main>section{
+.cardapio>section{
     display: flex; 
     align-items: center;
     margin-bottom: 1.5rem;
